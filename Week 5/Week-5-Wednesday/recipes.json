@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "blueberry pancakes",
+        "ingrediants": [
+            "blueberries",
+            "butter",
+            "eggs",
+            "baking powder",
+            "flour"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "avocado toast",
+        "ingrediants": ["avocado", "red pepper flakes", "olive oil", "bread"]
+    }
+]
