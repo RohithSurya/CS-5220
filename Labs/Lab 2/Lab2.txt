@@ -1,0 +1,58 @@
+Name: Rohith Surya Podugu
+Version 1 on Sep 29 3:19
+
+Users
+
+POST     /users
+--> request body is a user object
+--> returns the user object with id created from server
+--> returns an error if the userid is already taken
+
+GET     /users/:id
+--> path parameter :id
+--> optional query parameter Example: ?includes=bookmarks,snippets
+--> returns a user object
+--> returns and error if user object with id is not found
+
+PUT     /users/:id
+--> path parameter :id
+--> request body is a user object (doesn't include id)
+--> return the updated user object
+-->returns and error if no user was found
+
+
+Snippets
+
+GET     /snippets
+--> query parameter Example: ?language=java
+--> Returns an array of snippets
+
+GET     /snippets/:id
+--> path parameter :id
+--> optional query parameter Example: ?includes=bookmark_count
+--> returns a snippet object
+--> returns and error if no snippet was found
+
+POST    /snippets
+--> request object is a snippet object
+--> return the user object with "id" and "created" date created by the server
+
+DELETE      /snippets/:id
+--> path parameter :id
+--> returns confirmation and id that the snippet object was deleted
+--> returns an error if no snippet was found
+
+
+Bookmarks
+
+POST    /bookmarks
+--> request object is a bookmark object
+--> return the book mark object with id
+--> return an error if user or snippet was not found
+
+DELETE      /bookmarks/:id
+--> path parameter :id
+--> returns confirmation and id that the bookmark object was deleted
+--> returns an error if no bookmark was found
+
+
