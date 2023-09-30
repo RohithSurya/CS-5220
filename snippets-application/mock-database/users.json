@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "username": "rosurya",
+    "years_experience": 2,
+    "programming_languages": ["javascript", "java", "C++"]
+  },
+  {
+    "id": 2,
+    "username": "ykoti",
+    "years_experience": 10,
+    "programming_languages": ["javascript", "java", "go", "haskell"]
+  }
+]
