@@ -13,6 +13,6 @@
     "code_snippet": "// sum numbers between 1 and a given number \n\nconst sumNumbers = n => (n * (n + 1)) / 2; \nsumNumbers(5);",
     "programming_language": "javascript",
     "created": "2023-09-30T02:37:43.087Z",
-    "user_id": 2
+    "user_id": 1
   }
 ]

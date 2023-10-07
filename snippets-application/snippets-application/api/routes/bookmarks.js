@@ -18,7 +18,7 @@ router.delete("/:id", (req, res) => {
     bookmarks.splice(index, 1);
     res.json(id);
   } else {
-    res.status(404).json({ error: `Cannot find bookmark id: ${id}` });
+    res.status(404).json({ error: `No bookmark found with id: ${id}` });
   }
 });
 
