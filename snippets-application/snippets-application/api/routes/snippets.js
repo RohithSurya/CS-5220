@@ -61,7 +61,7 @@ router.delete("/:id", (req, res) => {
     }
     res.json({ success: "removed", type: "snippets", id });
   } else {
-    res.status(400).json({ error: `No snippet found with id: ${id}` });
+    res.status(404).json({ error: `No snippet found with id: ${id}` });
   }
 });
 

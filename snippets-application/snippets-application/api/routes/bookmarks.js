@@ -22,8 +22,4 @@ router.delete("/:id", (req, res) => {
   }
 });
 
-router.get("/", (req, res) => {
-  res.json(bookmarks);
-});
-
 module.exports = router;
