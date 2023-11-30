@@ -1,0 +1,18 @@
+[
+    {
+        "idx": 1,
+        "title": "sum numbers between 1 and a given number",
+        "code_snippet": "const sumNumbers = n => (n * (n + 1)) / 2;\nsumNumbers(5);",
+        "programming_language": "JavaScript",
+        "created": "2023-01-01T10:15:00.000Z",
+        "user_id": 1
+    },
+    {
+        "idx": 2,
+        "title": "ternary to determine state of H20",
+        "code_snippet": "degreeCelsius = 2\nstateOfH2O = 'liquid' if degreeCelsius > 0 else 'solid';",
+        "programming_language": "Python",
+        "created": "2023-02-01T10:15:00.000Z",
+        "user_id": 2
+    }
+]

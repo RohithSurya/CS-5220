@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "first": "Harley",
+        "last": "Quinn",
+        "university": "CSULA",
+        "degree": "Masters in Computer Science",
+        "specialties": ["JavaScript", "TypeScript", "Node.js"]
+    },
+    {
+        "id": 2,
+        "first": "Bruce",
+        "last": "Wayne",
+        "university": "CSULB",
+        "degree": "Bachelors in Computer Science",
+        "specialties": ["Python", "Flask"]
+    }
+]

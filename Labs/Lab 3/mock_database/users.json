@@ -1,0 +1,14 @@
+[
+    {
+        "idx": 1,
+        "username": "harley_quinn",
+        "years_experience": 18,
+        "programming_languages": ["JavaScript", "TypeScript"]
+    },
+    {
+        "idx": 2,
+        "username": "green_latern",
+        "years_experience": 10,
+        "programming_languages": ["Python"]
+    }
+]

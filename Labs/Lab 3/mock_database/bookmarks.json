@@ -1,0 +1,17 @@
+[
+    {
+        "idx": 1,
+        "user_id": 1,
+        "snippet_id": 2
+    },
+    {
+        "idx": 2,
+        "user_id": 1,
+        "snippet_id": 1
+    },
+    {
+        "idx": 3,
+        "user_id": 2,
+        "snippet_id": 1
+    }
+]

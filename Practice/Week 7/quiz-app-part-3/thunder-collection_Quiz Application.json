@@ -1,0 +1,260 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Quiz Application",
+    "dateExported": "2023-10-01T22:53:25.353Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "539305e6-f078-4606-b63f-5c31294a5e5f",
+            "name": "Professors",
+            "containerId": "",
+            "created": "2023-09-27T21:02:04.915Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "179aeb7a-64e3-47d3-a93f-6268a8ad329e",
+            "name": "Quizzes",
+            "containerId": "",
+            "created": "2023-09-27T21:02:17.167Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "d87ee447-9960-4baf-9d57-13121a4fa06a",
+            "name": "Questions",
+            "containerId": "",
+            "created": "2023-09-27T21:02:22.511Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "c80c6435-ed45-4f98-b172-45cfe9c1ff14",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "539305e6-f078-4606-b63f-5c31294a5e5f",
+            "name": "GET /professors",
+            "url": "localhost:8080/professors",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-09-27T21:01:56.225Z",
+            "modified": "2023-10-01T19:41:39.218Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "specialty",
+                    "value": "Java",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "12bcc7d0-5c49-4d6b-8092-334c3178e7cd",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "179aeb7a-64e3-47d3-a93f-6268a8ad329e",
+            "name": "GET /quizzes",
+            "url": "localhost:8080/quizzes",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-09-27T21:02:33.269Z",
+            "modified": "2023-10-01T21:55:21.175Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "language",
+                    "value": "python",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "d464a545-294f-46f6-86b0-4ed771f82245",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "179aeb7a-64e3-47d3-a93f-6268a8ad329e",
+            "name": "GET /quizzes/:id",
+            "url": "localhost:8080/quizzes/1?questions=true&answers=true",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-09-27T21:17:28.015Z",
+            "modified": "2023-10-01T21:35:22.806Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "questions",
+                    "value": "true",
+                    "isPath": false
+                },
+                {
+                    "name": "answers",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ed79cd1c-9885-483b-8718-6676eacbf5b7",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "179aeb7a-64e3-47d3-a93f-6268a8ad329e",
+            "name": "POST /quizzes",
+            "url": "localhost:8080/quizzes",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-09-27T21:19:35.731Z",
+            "modified": "2023-09-27T21:39:57.996Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Python Data Parsing\",\n  \"instructions\": \"Please select the best answer.\",\n  \"language_type\": \"Python\",\n  \"tags\": [\n    \"Pandas\",\n    \"csv\"\n  ],\n  \"professor_id\": 2\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d15207f6-8449-4642-9af6-709055d25428",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "179aeb7a-64e3-47d3-a93f-6268a8ad329e",
+            "name": "PUT /quizzes/:id",
+            "url": "localhost:8080/quizzes/3",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-09-27T21:40:16.480Z",
+            "modified": "2023-10-01T21:46:22.756Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"question_ids\": [\n    5\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0a2eadbd-7118-4e5c-a435-8e3f5b2af6cb",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "179aeb7a-64e3-47d3-a93f-6268a8ad329e",
+            "name": "DEL /quizzes/:id",
+            "url": "localhost:8080/quizzes/1",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-09-27T21:43:05.582Z",
+            "modified": "2023-10-01T22:00:40.080Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dca6eeb8-d7ac-443d-9714-c548589e01ba",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "539305e6-f078-4606-b63f-5c31294a5e5f",
+            "name": "GET /professors/:id",
+            "url": "localhost:8080/professors/1?quizzes=true",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-09-27T21:49:22.035Z",
+            "modified": "2023-10-01T21:18:14.369Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "quizzes",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b1d21a94-d318-470d-b7b4-22a51d5a2292",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "d87ee447-9960-4baf-9d57-13121a4fa06a",
+            "name": "POST /questions",
+            "url": "localhost:8080/questions",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-09-27T21:58:56.691Z",
+            "modified": "2023-09-27T22:02:55.131Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\": \"What is the primary data structure in the Pandas library used for manipulating tabular data, such as data loaded from CSV file?\",\n  \"points\": 0,\n  \"type\": \"multiple choice\",\n  \"answers\": [\n    {\n      \"answer\": \"List\",\n      \"isCorrect\": false\n    },\n    {\n      \"answer\": \"DataFrame\",\n      \"isCorrect\": true\n    },\n    {\n      \"answer\": \"Series\",\n      \"isCorrect\": false\n    },\n    {\n      \"answer\": \"Dictionary\",\n      \"isCorrect\": false\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8c610d79-947a-43dc-a255-a4c1490ec1be",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "d87ee447-9960-4baf-9d57-13121a4fa06a",
+            "name": "PUT /questions/:id",
+            "url": "localhost:8080/questions/5",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-09-27T22:03:07.900Z",
+            "modified": "2023-10-01T22:31:10.139Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"points\": 10\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3a8cb3eb-21b3-4afe-adf3-0ef60061c086",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "539305e6-f078-4606-b63f-5c31294a5e5f",
+            "name": "POST /professors",
+            "url": "localhost:8080/professors",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-09-27T22:10:33.334Z",
+            "modified": "2023-10-01T19:34:50.400Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"first\": \"Poison\",\n  \"last\": \"Ivy\",\n  \"university\": \"MIT\",\n  \"degree\": \"PhD in Computer Science\",\n  \"specialties\": [\n    \"AI\",\n    \"Machine Learning\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d70fbccf-c090-4397-8dd6-f24416a8fd4b",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "539305e6-f078-4606-b63f-5c31294a5e5f",
+            "name": "PUT /professors/:id",
+            "url": "localhost:8080/professors/5",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-09-27T22:13:04.064Z",
+            "modified": "2023-10-01T19:48:07.256Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"first\": \"Poison\",\n  \"last\": \"Ivy\",\n  \"university\": \"MIT\",\n  \"degree\": \"PhD in Computer Science\",\n  \"specialties\": [\n    \"AI\",\n    \"Machine Learning\",\n    \"C++\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bb29b6e9-5d30-4dd1-b343-476e18189cd1",
+            "colId": "a4d54399-c9f8-41c9-9609-06bf895c9445",
+            "containerId": "d87ee447-9960-4baf-9d57-13121a4fa06a",
+            "name": "DEL /questions/:id",
+            "url": "localhost:8080/questions/4",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-09-28T02:00:18.290Z",
+            "modified": "2023-10-01T22:45:20.812Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

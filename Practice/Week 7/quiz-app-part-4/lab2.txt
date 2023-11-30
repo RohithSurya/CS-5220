@@ -1,0 +1,75 @@
+NAME: Professor Cydney Auman
+VERSION: 1 on 9/27/23 at 7:25pm
+
+
+PROFESSORS
+
+GET      /professors
+-> query parameter  Example: ?specialty=javascript
+-> returns a array of professor objects
+
+GET      /professors/:id
+-> path parameter :id
+-> query parameter  Example: ?quizzes=true
+-> returns a professor object
+-> returns and error if no professor was found
+
+POST      /professors
+-> request body is a professor object
+-> returns the professor object with the id created from server
+
+PUT      /professors/:id
+-> path parameter :id
+-> request body is a professor object (does not include the id)
+-> returns the updated professor object
+-> returns and error if no professor was found
+
+-----
+
+QUIZZES
+
+GET      /quizzes
+-> query parameter  Example: ?language=javascript
+-> returns a array of quiz objects
+
+GET      /quizzes/:id
+-> path parameter :id
+-> query parameter  Example: ?questions=true&answers=true
+-> returns a quiz object
+-> returns and error if no quiz was found
+
+POST      /quizzes
+-> request body is a quiz object
+-> handles id, created to be set by server.  always sets questions_ids to empty array
+-> returns the quiz object with the id, date created and questions_ids from server
+
+PUT      /quizzes/:id
+-> path parameter :id
+-> request body is a quiz object (does not include the id) (does not allow update to created)
+-> returns the updated quiz object
+-> returns and error if no quiz was found
+
+DELETE      /quizzes/:id
+-> path parameter :id
+-> handles removing all questions associated to the quiz
+-> returns confirmation and id that the quiz object was deleted
+-> returns and error if no question was found
+
+-----
+
+QUESTIONS
+
+POST      /questions
+-> request body is a question object
+-> returns the question object with the id created from server
+
+PUT      /questions/:id
+-> request body is a question object (does not include the id)
+-> returns the updated question object
+-> returns and error if no question was found
+
+DELETE      /questions/:id
+-> path parameter :id
+-> handles removing the question id from the associated quiz's questions_ids array
+-> returns confirmation and id that the question object was deleted
+-> returns and error if no question was found

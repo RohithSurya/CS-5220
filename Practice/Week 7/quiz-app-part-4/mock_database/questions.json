@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "text": "REST only supports a JSON message format.  REST APIs cannot return other message formats like XML.",
+        "points": 10,
+        "type": "true/false",
+        "answers": [
+            { "answer": true, "isCorrect": false },
+            { "answer": false, "isCorrect": true }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "What keyword is used to variables in JavaScript?",
+        "points": 10,
+        "type": "multiple choice",
+        "answers": [
+            { "answer": "var", "isCorrect": true },
+            { "answer": "variable", "isCorrect": false },
+            { "answer": "int", "isCorrect": false },
+            { "answer": "str", "isCorrect": false }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "The __________ is what allows JavaScript running on Node.js to perform non-blocking I/O operations. ",
+        "points": 10,
+        "type": "fill in the blank",
+        "answers": [
+            { "answer": "Event Loop", "isCorrect": true },
+            { "answer": "event loop", "isCorrect": true }
+        ]
+    },
+    {
+        "id": 4,
+        "text": "What keyword is the most appropriate way to declare a node module when requiring them into your JavaScript application?",
+        "points": 10,
+        "type": "multiple choice",
+        "answers": [
+            { "answer": "var", "isCorrect": false },
+            { "answer": "const", "isCorrect": true },
+            { "answer": "let", "isCorrect": false },
+            { "answer": "none", "isCorrect": false }
+        ]
+    }
+]

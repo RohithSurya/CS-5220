@@ -1,0 +1,17 @@
+{
+    "name": "quiz-application",
+    "version": "2.0.0",
+    "description": "an app for professors to manage quizzes",
+    "main": "server.js",
+    "scripts": {
+        "start": "npx nodemon server.js"
+    },
+    "author": "Cydney Auman",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}
