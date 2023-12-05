@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 
 // BUILD THE MONGO URI CONNECTION STRING
-const { username, password, projectname } = require("./config.json");
+const { username, password, projectname } = require("../config.json");
 // const mongoUrl = `mongodb+srv://prsurya1020:1234@cluster0.g9wbkot.mongodb.net/?retryWrites=true&w=majority`;
 const mongoUrl = `mongodb+srv://${username}:${password}@cluster0.g9wbkot.mongodb.net/?retryWrites=true&w=majority`;
 

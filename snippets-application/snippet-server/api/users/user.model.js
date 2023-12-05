@@ -6,6 +6,11 @@ const UserSchema = new mongoose.Schema(
       type: String,
       unique: true,
       lowercase: true,
+      required: true,
+    },
+    password: {
+      type: String,
+      required: true,
     },
     years_experience: Number,
     programming_languages: [String],
