@@ -66,7 +66,7 @@ const loginUser = async (req, res) => {
       );
       const authorized = user.toObject();
       delete authorized.password;
-      res.header("Authentication", `Bearer ${token}`).json(authorized);
+      res.header("Authorization", `Bearer ${token}`).json(authorized);
     } else {
       res.status(401).json("Invalid credentials");
     }
