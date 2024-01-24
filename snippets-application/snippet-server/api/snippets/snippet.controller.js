@@ -17,6 +17,30 @@ const getSnippets = async (req, res) => {
   }
 };
 
+const getSnippetsForUser = async (req, res) => {
+  const { query, params } = req;
+  const { language: programmingLanguage } = query;
+  const id = params.id;
+  let filter = {};
+  if (programmingLanguage) {
+    filter = {
+      programming_language: { $regex: programmingLanguage, $options: "i" },
+    };
+  }
+  try {
+    const snippets = await Snippet.find(filter)
+    .populate({
+      path: 'bookmarks',
+      match: {
+        user_id: id
+      }
+    }).populate("bookmark_count");
+    res.json(snippets);
+  } catch (error) {
+    res.status(500).json({ error: error.toString() });
+  }
+};
+
 const getSnippetById = async (req, res) => {
   const { params, query } = req;
   const id = params.id;
@@ -71,4 +95,5 @@ module.exports = {
   getSnippetById,
   createSnippet,
   deleteSnippetById,
+  getSnippetsForUser
 };
