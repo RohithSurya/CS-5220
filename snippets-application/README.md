@@ -1,10 +1,4 @@
-# CS-5220
-
-
-All about Advanced Programming class taken at Calstate LA, by Cydney Auman
-
-
-## Snippets Application
+# Snippets Application
 **Building a Node.js RESTful Server Application**
 
 - Creating Mock Data for data models
